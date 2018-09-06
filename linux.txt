@@ -1,0 +1,131 @@
+1、没面试机会
+时间短
+
+改项目
+
+2、linux
+系统：乌班图ubuntu | centos(免费) ——> red-hat(收费，功能多)
+版本：
+
+shell脚本：（功能单一，减轻相互之间的影响）
+  我现在用的是python
+ansiable剧本：剧本里套脚本
+
+shell脚本是什么：命令大礼包
+mkdir -p /123/123/123
+
+
+shell自动化-半自动化
+shell + ansiable
+
+
+脚本以.sh结尾
+a = date(%F)
+  mkdir -p a
+
+定时任务：清除日志  备份
+闹钟
+** ** ** ** ** sh 以时间.sh
+年 月 周 时 分
+
+成批量部署服务器：
+成批量安装linux:
+
+两个、重复：高可用
+
+nginx:资源占用少
+我可用开第二台nginx
+分配：nginx的配置文件
+  以nginx.conf结尾
+
+权重模块：weight来分（比重分配）
+	  一个一个去分配（轮询）
+	  哈希算法
+
+心跳线：keepalived
+
+问题？
+都活着，并且不知道对方活着
+脑裂（年轻）
+裂脑（30+）
+
+ssh 22
+keepalived:1W以后了
+
+if ss -lntup|grep 11111
+
+sef  awk  grep   linux三剑客
+
+ss -lntup|grep python  （查端口过滤python）
+
+
+数据库集群：3306 3307 
+
+证券公司：动态
+
+主从同步：
+ 第1台mysql:用来时刻往里写数据
+ 第2台mysql:时刻和第一台同步
+
+环状同步：
+  mysql  redis读写分离  mongodb
+
+房产公司：静态
+  oracle：大型、牛逼 附带产品多
+
+短视频，弹幕网，腾讯视频，斗鱼，爱奇艺：
+  redis 读写分离：pc 移动  
+	分布式存储：
+  memached:缓存
+
+数据：备份
+
+
+web:
+  lnmp  lamp
+   linux+nginx+mysql+php
+     环境：1、linux环境
+           2、nginx服务（负载）并发量10多万
+	   3、mysql
+	   4、php环境
+	
+linux:
+nginx: centos7-云计算
+  yum -y install nginx
+
+PHP:一百多行安装命令
+
+mysql:
+  yum -y install mysql
+  marriedb
+
+无人值守安装：
+  cobbler:图形   
+  kickstar:纯命令操作
+
+docker容器
+
+
+
+nginx代理：正向代理
+	   反向代理（节省资源，速度快）
+
+lvs负载均衡：
+   比nginx速度更快  mac地址（省略返回web集群、交换机组）
+ 怎么找人：
+   买货思想 快递思想
+
+mysql
+  多实例：
+
+  标准配置文件要有
+  改：启动路径改掉
+  /etc/init.d
+  启动路径改到你所创建的目录下
+  启动命令：/etc/init.d start
+
+  mkdir mysql/3306mysql
+  mkdir mysql/3307mysql
+
+  mysql3306.socket start
+  mysql3306.socket start
